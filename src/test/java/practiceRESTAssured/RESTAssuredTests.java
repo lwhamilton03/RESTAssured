@@ -1,3 +1,4 @@
+package practiceRESTAssured;
 //package practiceRESTAssured;
 //
 //import org.junit.After;
