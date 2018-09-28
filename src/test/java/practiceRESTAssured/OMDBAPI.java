@@ -40,7 +40,7 @@ public class OMDBAPI {
 	public void a_user_retrieves_the_film_by_the_title_Guardians_of_the_Galaxy_Two() 
 	{
 	   // response = request.when().get(Constants.APILINK + "&t=Guardians of the Galaxy Vol. 2");
-		response = request.when().get(Constants.APILINK + "&t=Guardians of the Galaxy Vol .2");
+		response = request.when().get(Constants.APLINK + "&t=Guardians of the Galaxy Vol .2");
 	}
 
 	@Then("^the status code reads (\\d+)$")
@@ -59,7 +59,7 @@ public class OMDBAPI {
 	@When("^a user retrieves the film by the title IT$")
 	public void a_user_retrieves_the_film_by_the_title_IT() 
 	{
-		response = request.get(Constants.APILINK + "&t=IT");
+		response = request.when().get(Constants.APILINK + "&t=IT");
 	}
 
 	@Then("^the Rated Field is equal to R$")
@@ -77,7 +77,7 @@ public class OMDBAPI {
 	@When("^a user retrieves the film by the title \"([^\"]*)\"$")
 	public void a_user_retrieves_the_film_by_the_title(String arg1) 
 	{
-		response = request.get(Constants.APILINK + "&t=" + arg1);
+		response = request.when().get(Constants.APILINK + "&t=" + arg1);
 	}
 
 	@Then("^the Rated Field is equal to \"([^\"]*)\"$")
